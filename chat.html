@@ -1,0 +1,124 @@
+<!DOCYTYPE HTML>
+    <html>
+    <meta charset="UTF-8">
+
+    <head>
+        <title>MBTI 분석 채팅</title>
+        <link rel="stylesheet" href="app.css" />
+
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+
+        <script src="msg.js"></script>
+        <script src="chat-1-on-1.js"></script>
+
+        <!-- Favicon 이미지 -->
+        <link rel="icon" href="./123.png" />
+
+        <!-- 공유하기-카카오 -->
+        <!-- <script src="https://t1.kakaocdn.net/kakao_js_sdk/${VERSION}/kakao.min.js" integrity="${INTEGRITY_VALUE}"
+            crossorigin="anonymous"></script>
+
+        <script>
+            Kakao.init('82b07952df96516f0e6170892a391a67');
+            Kakao.isInitialized();
+        </script>
+
+        <script src="share.js"></script> -->
+
+        <!-- 공유하기-sharethis -->
+        <script type="text/javascript"
+            src="https://platform-api.sharethis.com/js/sharethis.js#property=65926284ffbcf100127cdce4&product=inline-share-buttons&source=platform"
+            async="async"></script>
+
+    </head>
+
+    <body>
+
+        <main>
+
+            <div id="loading" class="loading-box">
+                <div class="sk-circle">
+                    <div class="sk-circle1 sk-child"></div>
+                    <div class="sk-circle2 sk-child"></div>
+                    <div class="sk-circle3 sk-child"></div>
+                    <div class="sk-circle4 sk-child"></div>
+                    <div class="sk-circle5 sk-child"></div>
+                    <div class="sk-circle6 sk-child"></div>
+                    <div class="sk-circle7 sk-child"></div>
+                    <div class="sk-circle8 sk-child"></div>
+                    <div class="sk-circle9 sk-child"></div>
+                    <div class="sk-circle10 sk-child"></div>
+                    <div class="sk-circle11 sk-child"></div>
+                    <div class="sk-circle12 sk-child"></div>
+                </div>
+                <div style="margin-top: 10px;">GPT에서 답변을 생성 중입니다...</div>
+            </div>
+
+            <section id="msg-list" class="msg-container">
+                <!-- <div class="msg-box left">
+                <div class="bubble">
+                    <div>안녕</div>
+                    <div>
+                        <button>다음</button>
+                    </div>
+                </div>
+            </div> -->
+
+            </section>
+
+            <!-- <section class="input-container">
+            <input/>
+            <button>보내기</button>
+        </section> -->
+
+        </main>
+
+        <section id="bottom" class="btm-container">
+            <div class="bottom center">
+                <!-- <button class="kakaoShare-btn">공유하기</button> -->
+
+                <div class="sharethis-inline-share-buttons" style="padding-bottom: 30px; padding-top: 10px;"></div>
+                
+                <!-- Disqus 댓글 입력란 -->
+                <div style="background-color: aliceblue;">
+                    <div>
+                        Disqus를 활용한 댓글 입력란입니다.
+                        <br>현재 서비스가 원활하지 못하므로 양해 부탁드리겠습니다.</p>
+                    </div>
+                    <div id="disqus_thread"></div>
+
+
+                    <script>
+                        /**
+                        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                        /*
+                        var disqus_config = function () {
+                        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        };
+                        */
+                        (function () { // DON'T EDIT BELOW THIS LINE
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://mbti-chat.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+                            powered by Disqus.</a></noscript>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+    </body>
+
+    </html>
